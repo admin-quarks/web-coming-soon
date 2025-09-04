@@ -53,13 +53,21 @@
                 transform: scale(1.05);
             }
         }
+        @media (max-width: 767px) {
+            #video-background {
+                min-width: 100%;
+                min-height: 100%;
+                width: auto;
+                height: auto;
+            }
+        }
     </style>
 </head>
 <body>
 
     <div class="content-overlay">
-        <div class="mb-8">
-            <h1 class="text-6xl font-extrabold tracking-tight md:text-8xl brand-text text-white">QUARKS</h1>
+        <div class="mb-8 w-64 md:w-80">
+            <img src="/assets/quarks logo.png" alt="Quarks Logo" class="w-full h-auto">
         </div>
         <p class="text-3xl md:text-5xl font-light mb-4">Crafting Tomorrow's Narratives Today</p>
         <p class="text-xl md:text-3xl font-light mb-8">Redefining Excellence in Events, Content & Consulting</p>
@@ -70,7 +78,7 @@
     </div>
 
     <video autoplay muted loop id="video-background">
-        <source src="assets/quarks-hero.mp4" type="video/mp4">
+        <source src="/assets/quarks-hero.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
 
